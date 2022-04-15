@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quallenfischen</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="main-dialogbox">
+        <h1>Quallenfischen mit Mr. Krabs</h1>
+        <div class="gameboard" id=gameboard>
+            <div class="t-1-1">
+                <h2>Wähle deinen Spieler:</h2>
+            </div>
+            <div class="t-2-1">
+                <h2>Wähle dein Level:</h2>
+            </div>
+            <div class="t-1-2">
+                <div id="p1" onclick="choosePlayer(1)" class="spieler">
+                    <h2>Spongebob</h2>
+                    <img src="spieler/spongebob.png" alt="spongebob">
+                </div>
+                <div id="p2" onclick="choosePlayer(2)" class="spieler">
+                    <h2>Patrick</h2>
+                    <img src="spieler/patrick.png" alt="patrick">
+                </div>
+                <div id="p3" onclick="choosePlayer(3)" class="spieler">
+                    <h2>Thaddäus</h2>
+                    <img src="spieler/thaddaeus.png" alt="thaddaeus">
+                </div>
+            </div>
+            <div class="t-2-2">
+                <div id="l1" onclick="chooseLevel(1)" class="level">
+                    <h2>Leicht</h2>
+                    <img src="scenes/Bikini Bottom.png" alt="Bikini_bottom">
+                </div>
+                <div id="l2" onclick="chooseLevel(2)" class="level">
+                    <h2>Mittel</h2>
+
+                    <img src="scenes/die Goo Lagoon.png" alt="goo_lagoon">
+                </div>
+                <div id="l3" onclick="chooseLevel(3)" class="level">
+                    <h2>Schwer</h2>
+                    <img src="scenes/unser Zuhause.png" alt="home">
+                </div>
+            </div>
+            <div class="t-1-3">
+                <button class="button1" onclick="prepareGameboard()">Start!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <div class="footer-1">
+            <img src="mr_krabs/krabs_1.png" alt="krabs_1">
+
+        </div>
+        <div class="footer-2">
+            <h2>Mr. Krabs</h2>
+            <p> Min Jung, du musst uns helfen! Wir schweben in großer Gefahr… <br>
+                Die Quallen haben sich gegen uns verschworen und möchten nun uns ausquetschen
+                und aus uns Marmelade mache! Hilf uns dabei die Plage in den Griff zu bekommen. <br>
+                Wähle deinen Spieler und dein Level…. Und LOS GEHT’S !!</p>
+        </div>
+
+    </div>
+
+    <script src="enemy.js"></script>
+    <script src="enemyList.js"></script>
+    <script src="myscript.js"></script>
+
+
+</body>
+
+</html>
